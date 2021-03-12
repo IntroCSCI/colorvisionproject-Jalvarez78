@@ -2,7 +2,8 @@
 
 ## Description
 
-!!!Replace with a description of what your program does!!!
+The main objective of this program is to create a palette with
+your ammout of colors needed and to minimize problematic color combos.
 
 ### v0.2 Updates
 
@@ -15,7 +16,7 @@
 
 ## Developer
 
-!!!Replace with your name!!!
+Jason Alvarez
 
 ## Example
 
@@ -29,30 +30,39 @@ g++ --std=c++11 *.cpp -o cvp
 Here is an example of the program running:
 
 ```
-!!!Replace with an example of the program running with user interaction!!!
+The main objective of this
+program is to create
+a palette with
+your ammout of colors needed
+and to minimize
+problematic color combos
+How many colors will be needed?
+(Please type a integer bigger than 1)
+6
+So 6 colors will be needed?
+type y/n
+y
+What would you like to call your palette?:
+ghost
 ```
 
 ## C++ Guide
 
 ### Variables and Data Types
-
-!!!Replace with a summary and examples of how multiple variables have been used with a variety of data types and why they have been used effectively and appropriately!!!
+I have used the integer, character, and string variables to save user input such as the number of colors they will need or if they want to continue with the correct amount of colors.
 
 ### Console Input and Output
-
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!!
+I used user input to get the number of colors they will need then I displayed it in the file that they named.
 
 ### Decisions
-
-!!!Replace with a summary and examples of how multiple decision constructs have been used effectively and appropriately!!!
+I used an if statment to determine if the user wants to continue with the correct amount of colors.
 
 ### Iteration
 
-!!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
+I used a loop for if the user doesn't want to continue with the number of colors they typed in they can go back and type a different amount.
 
 ### File Input and Output
-
-!!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
+I allowed the user to create their own file then displayed their inputs in the file.
 
 ### Arrays/Vectors
 
