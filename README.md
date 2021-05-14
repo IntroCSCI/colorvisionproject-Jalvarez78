@@ -1,17 +1,16 @@
-# !!!Replace with your unique project name!!!
+# Hexadecimal Color Value File Converter?
 
 ## Description
 
-The main objective of this program is to create a palette with
-your ammout of colors needed and to minimize problematic color combos.
+The main objective of this program is to create a palette from a set of two colors with your ammout needed and to minimize problematic color combos.
 
 ### v0.2 Updates
 
-*Coming soon*
+I fixed an issue with the "type y/n" part of the program. I also added new options for the user to pick from. I also added two new functions.
 
 ### v1.0 Updates
 
-*Coming soon*
+I added a class to organize my functions. I also added a new return type and fixed the coding so it's easier to read and removed random semicolons.
 
 
 ## Developer
@@ -30,48 +29,52 @@ g++ --std=c++11 *.cpp -o cvp
 Here is an example of the program running:
 
 ```
-The main objective of this
-program is to create
-a palette with
-your ammout of colors needed
-and to minimize
-problematic color combos
+The main objective of this program is to create a colorblind safe
+palette from a select set of two colors.
+From these options please choose your color combination 
+* Blue and Red
+* Green and Purple
+* Yellow and Blue
+Please type the full color combination ex: Yellow and Blue
+Brown and gray
+From these options please choose your color combination 
+* Blue and Red
+* Green and Purple
+* Yellow and Blue
+Please type the full color combination ex: Yellow and Blue
+Blue and Red
 How many colors will be needed?
-(Please type a integer bigger than 1)
-6
-So 6 colors will be needed?
-type y/n
+(Please type a integer between 2 and 21)
+7
+So 7 colors will be needed from Blue and Red?
+type (y/n)
 y
-What would you like to call your palette?:
-ghost
+What would you like to call your palette?: *please make it one word*
+test
 ```
 
 ## C++ Guide
 
 ### Variables and Data Types
-I have used the integer, character, and string variables to save user input such as the number of colors they will need or if they want to continue with the correct amount of colors.
+I have used the integer, character, and string data types to save user input such as the number of colors they will need or if they want to continue with the correct amount of colors. I also used an fstream variable get the correct color file open.
 
 ### Console Input and Output
-I used user input to get the number of colors they will need then I displayed it in the file that they named.
+I used multiple user input to get the right file to open, to get the amount of colors the user needs, to have the user confirm the correct amount of colors, to get the name of the users file.
 
 ### Decisions
-I used an if statment to determine if the user wants to continue with the correct amount of colors.
+I used two if statements one being at the end of the first do while loop so that if the user enters 'Y' or 'y' the program will continue the other if statement is in the function and it's determining if the "color.txt" file is open.
 
 ### Iteration
-
-I used a loop for if the user doesn't want to continue with the number of colors they typed in they can go back and type a different amount.
+I used three do while loops and one for loop. The three do while loops are used to ask the user how many colors are need and for the user to confirm how many colors are need. The for loop is used in the function to index the array until it reaches zero.
 
 ### File Input and Output
 I allowed the user to create their own file then displayed their inputs in the file.
 
 ### Arrays/Vectors
-
-*Coming in version 0.2*
+I created an array using the amount of colors the user needed.
 
 ### Functions
-
-*Coming in version 0.2*
+The first function is string and is returning the "whatColor" to the correct file name based on the users input. The second function is a void function. This function is opening the color file and creating the users file then putting the amount of hexadecimal color values the user requires from "color.txt" in the user file.
 
 ### Classes
-
-*Coming in version 1.0*
+The class I created is called "colorss" and only includes public members in "colorss.h" because I couldn't find a use for private members. In "colorss.cpp" I have two functions I've used before.  
