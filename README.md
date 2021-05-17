@@ -1,4 +1,4 @@
-# Hexadecimal Color Value File Converter?
+# Hexadecimal Color Value File Converter
 
 ## Description
 
@@ -26,7 +26,7 @@ g++ --std=c++11 *.cpp -o cvp
 ./cvp
 ```
 
-Here is an example of the program running:
+Here is an example of the program running: 
 
 ```
 The main objective of this program is to create a colorblind safe
@@ -52,6 +52,25 @@ y
 What would you like to call your palette?: *please make it one word*
 test
 ```
+Here's the output file: **test** from the example.
+
+```
+Here are your 7 colors:
+#005ab5
+#0b58ae
+#1656a6
+#21549f
+#2c5297
+#375090
+#424e88
+```
+
+Give an explanation
+
+When the user enters `Brown and Gray` the program detects that `Brown and Gray` is not part of the three options available so the program repeats the three options until `Blue and Red` is detected then the program continues. The program then sees that `7` colors will be needed which is between 2 and 21 so the program continues. The program then asks the user to name their file.
+
+
+
 
 ## C++ Guide
 
@@ -62,19 +81,23 @@ I have used the integer, character, and string data types to save user input suc
 I used multiple user input to get the right file to open, to get the amount of colors the user needs, to have the user confirm the correct amount of colors, to get the name of the users file.
 
 ### Decisions
-I used two if statements one being at the end of the first do while loop so that if the user enters 'Y' or 'y' the program will continue the other if statement is in the function and it's determining if the "color.txt" file is open.
+I used two `if` statements one being at the end of the first `do while` loop so that if the user enters `Y` or `y` the program will continue the other `if` statement is in one of the functions.The `if` statement is determining if the "color.txt" file is open.
 
 ### Iteration
-I used three do while loops and one for loop. The three do while loops are used to ask the user how many colors are need and for the user to confirm how many colors are need. The for loop is used in the function to index the array until it reaches zero.
+
+!!Give examples of what the loops do and why they need to loop!!
+
+I used three `do while` loops and one `for` loop. The first `do while` loop is making sure the user enters one of the three pre selected color combinations, the second `do while` loops is making sure the user types a integer between 2 and 21, and the last `do while` loops is getting confirmation that the program detected the correct amount of colors the user needs. The `for` loop is used in the function to index the array until it reaches zero.
 
 ### File Input and Output
 I allowed the user to create their own file then displayed their inputs in the file.
 
 ### Arrays/Vectors
-I created an array using the amount of colors the user needed.
+I created an `array` using the amount of colors the user needed.
 
 ### Functions
+
 The first function is string and is returning the "whatColor" to the correct file name based on the users input. The second function is a void function. This function is opening the color file and creating the users file then putting the amount of hexadecimal color values the user requires from "color.txt" in the user file.
 
 ### Classes
-The class I created is called "colorss" and only includes public members in "colorss.h" because I couldn't find a use for private members. In "colorss.cpp" I have two functions I've used before.  
+The class I created is called "colorss" and only includes public members in "colorss.h". In "colorss.cpp" I have two functions I've used before.  !!Rephrase this sentence to make sense.!!

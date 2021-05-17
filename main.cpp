@@ -35,7 +35,7 @@ int main()
     do{
 		cout << "How many colors will be needed?\n"<< "(Please type a integer between 2 and 21)" << endl;
     cin >> colors;
-    }while (colors > 2 colors < 21);
+    }while (colors < 2 && colors > 21);
 
 		do {
 		cout << "So " << colors << " colors will be needed from " << whatColor << "?\n";
